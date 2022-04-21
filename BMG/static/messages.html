@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8d3639bdfc.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Resgister Customers</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="header__h1">BEM</h1>
+        <div class="header__account">
+        </div>
+    </header>
+    <main>
+        <nav>
+            <ul class="nav__ul">
+                <li class="nav__li">
+                    <a class="nav__a" href="messages.html">
+                        <i class="fas fa-address-book"></i>
+                        <span class="nav__span">Birthday Messages</span>
+                    </a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__a" href="customers.html">
+                        <i class="fas fa-calculator"></i>
+                        <span class="nav__span">Customers</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="tabs-holder">
+                <ul class="tabs">
+                    <li class="tabs__li"><a id="content1" class="tabs__a clickedLink">GENERATE MESSAGES</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="content1 content initial-content">
+                        <div class="table-filters">
+                            <input class="form__input form__input--filter" required type="date" name="birth-date" id="birth-date">
+                            <button class="button button--green button-filter--add-team" id="button-filter--generate-message">Generate</button>
+                        </div>
+                        <div class="message-container" id="message-container">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="../js/message.js"></script>
+</body>
+
+</html>
